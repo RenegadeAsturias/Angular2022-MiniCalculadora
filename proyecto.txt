@@ -1,0 +1,50 @@
+
+1º Para crear la aplicación:
+
+renegade@MiPC:~/proyectos/Angular2022$ ng new miniCalculadora
+
+
+
+2º Vamos a utilizar inputs de formulario, así que añadimos el módulo
+
+Hay que importar el módulo para utilizar ngModel, en los inputs del formulario
+
+Para ello vamos al fichero: src/app/app.module.ts y añadimos: FormsModule
+
+import { FormsModule } from '@angular/forms';
+
+@NgModule({
+  imports: [
+    BrowserModule, FormsModule
+  ],
+
+
+... ... ...
+
+3º Para instalar Bootstrap
+
+renegade@MiPC:~/proyectos/Angular2022/miniCalculadora$ npm install bootstrap --save
+
+
+4º Además hay que añadir en el fichero: angular.json
+en la sección de "styles" la referencia al fichero de estilos de bootstrap
+y la sección de "scripts" la referencia al fichero de javascript de bootstrap
+
+"architect": {
+  "build": {
+    "builder": "@angular-devkit/build-angular:browser",
+    "options": {
+      ... ... ... ... ...
+      "styles": [
+        "src/styles.css",
+        "node_modules/bootstrap/dist/css/bootstrap.min.css"
+      ],
+      "scripts": [
+        "node_modules/bootstrap/dist/js/bootstrap.min.js"
+      ]
+
+
+
+
+
+
