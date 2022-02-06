@@ -44,6 +44,36 @@ y la sección de "scripts" la referencia al fichero de javascript de bootstrap
       ]
 
 
+5º Inicializo el proyecto con Git y añado el remoto para subir a GitHub 
+
+renegade@MiPC:~/proyectos/Angular2022/miniCalculadora$ git init
+renegade@MiPC:~/proyectos/Angular2022/miniCalculadora$ git remote add miniCalculadora https://github.com/RenegadeAsturias/Angular2022-MiniCalculadora.git
+
+renegade@MiPC:~/proyectos/Angular2022/miniCalculadora$ git add .
+renegade@MiPC:~/proyectos/Angular2022/miniCalculadora$ git commit -m "Proyecto MiniCalculadora"
+
+renegade@MiPC:~/proyectos/Angular2022/miniCalculadora$ git push miniCalculadora master
+Enumerando objetos: 45, listo.
+Contando objetos: 100% (45/45), listo.
+Compresión delta usando hasta 4 hilos
+Comprimiendo objetos: 100% (43/43), listo.
+Escribiendo objetos: 100% (45/45), 199.28 KiB | 4.07 MiB/s, listo.
+Total 45 (delta 8), reusado 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/RenegadeAsturias/Angular2022-MiniCalculadora.git
+ * [new branch]      master -> master
+
+
+
+
+ 
+
+
+
+
+
+
+
 
 
 
